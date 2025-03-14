@@ -16,6 +16,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.header{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #F2F5F6;
+    .header-logo{
+        img{
+            width: 158px;
+            height: 24px;
+        }
+    }
+    .header-links{
+        ul{
+            gap: 50px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            li{
+                line-height: 1;
+                color: #313441;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    }
+    .header-buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        .login-button{
+            color: #12141D;
+            background-color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 15px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        .sign-up-button{
+            background-color: #043A53;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+    }
+}
 /* Hero Section */
 
 .hero{
