@@ -23,6 +23,16 @@
     align-items: center;
     padding: 20px 10px;
     background-color: #F2F5F6;
+    .mobile-menu-links{
+        display: none;
+        @media (max-width:760px) {
+            display: flex;
+            .fa-bars{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
     .header-logo{
         img{
             width: 158px;
@@ -43,6 +53,9 @@
                 font-size: 16px;
                 font-weight: 700;
             }
+        }
+        @media (max-width:760px) {
+            display: none;
         }
     }
     .header-buttons{
@@ -68,6 +81,9 @@
             padding: 15px 20px;
             border-radius: 30px;
             cursor: pointer;
+        }
+        @media (max-width:760px) {
+            display: none;
         }
     }
 }
@@ -182,6 +198,7 @@
 /* Trusted Section */
 .trusted-section {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: repeat(6, 1fr); 
     gap:100px;
     padding: 30px 200px 30px 200px;
