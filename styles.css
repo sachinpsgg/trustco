@@ -485,3 +485,84 @@
         }
     }
 }
+
+
+
+.building-bridges{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    @media (max-width:800px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .building-image{
+        img{
+            width: 800px;
+            height: 650px;
+            @media (max-width:800px) {
+                max-width: 100%;
+                width: auto;
+            }
+        }
+    }
+    .building-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        align-content: start;
+        padding: 100px 80px;
+        gap: 30px;
+        @media (max-width:800px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+        h1{
+            color:#12141D;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 72px;
+            letter-spacing: -0.02em;
+            span{
+                color: #92A7B0;
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0;
+        }
+        .report-button{
+            display: flex;
+            flex-direction: row;
+            border: none;
+            align-items: center;
+            background-color: #003f5c;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            gap: 15px;
+            .button-icon{
+                background: rgba(255, 255, 255, 0.2);
+                padding: 8px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+        }
+    }
+}
