@@ -576,9 +576,9 @@
     gap: 5px;
     text-align: center;
     width: 100%;
-    /* @media (max-width:760px) {
+    @media (max-width:760px) {
         grid-template-columns: repeat(2, 1fr);
-    } */
+    }
     .number-item{
             background: white;
             padding: 20px;
