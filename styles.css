@@ -569,4 +569,37 @@
     }
 }
 
-
+/* number section styling */
+.number-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    text-align: center;
+    width: 100%;
+    /* @media (max-width:760px) {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+    .number-item{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            h2{
+                margin: 0;
+                color: #002b45;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 72px;
+                letter-spacing: -0.02em;
+                text-align: center;
+            }
+            p{
+                color: #404040;
+                margin: 5px 0 0;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0; 
+                text-align: center;
+            }
+    }
+}
